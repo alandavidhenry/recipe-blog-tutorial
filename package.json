@@ -1,0 +1,37 @@
+{
+  "name": "recipe-blog-tutorial",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "SET DEBUG=FILENAME:* & npm run devstart"
+  },
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.3",
+    "morgan": "~1.9.1"
+  },
+  "description": "Build a Recipe Blog using Node.js and MongoDB (Express, EJS, Mongoose & more...) CRUD [Raddy]",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alandavidhenry/recipe-blog-tutorial.git"
+  },
+  "author": "Alan Henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alandavidhenry/recipe-blog-tutorial/issues"
+  },
+  "homepage": "https://github.com/alandavidhenry/recipe-blog-tutorial#readme"
+}
