@@ -23,7 +23,7 @@
     
     <% if(categories != '') { %> 
         <% categories.forEach(function(category, index) { %> 
-            <a href="#" class="col text-center category__link">
+            <a href="/categories/<%- category.name %>" class="col text-center category__link">
                 <div class="category__img shadow">
                     <img src="images/<%- category.image %> " alt="<%- category.name %>" loading="lazy">
                 </div>
@@ -31,34 +31,6 @@
             </a>
         <% }) %> 
     <% } %> 
-
-    <!-- <a href="#" class="col text-center category__link">
-        <div class="category__img shadow">
-            <img src="images/american-food.jpg" alt="View American Food" loading="lazy">
-        </div>
-        <div class="pt-1">American Food</div>
-    </a>
-
-    <a href="#" class="col text-center category__link">
-        <div class="category__img shadow">
-            <img src="images/american-food.jpg" alt="View American Food" loading="lazy">
-        </div>
-        <div class="pt-1">American Food</div>
-    </a>
-
-    <a href="#" class="col text-center category__link">
-        <div class="category__img shadow">
-            <img src="images/american-food.jpg" alt="View American Food" loading="lazy">
-        </div>
-        <div class="pt-1">American Food</div>
-    </a>
-
-    <a href="#" class="col text-center category__link">
-        <div class="category__img shadow">
-            <img src="images/american-food.jpg" alt="View American Food" loading="lazy">
-        </div>
-        <div class="pt-1">American Food</div>
-    </a> -->
 
     <a href="/categories" class="col text-center category__link">
         <div class="category__img shadow">
@@ -71,7 +43,6 @@
 <!-- Categories End -->
     
 <!-- Latest Start -->
-
 <section class="pb-4 pt-4">
     <div class="d-flex mb-2 align-items-center">
       <h2>Latest Recipes</h2>
@@ -94,7 +65,6 @@
     </div>
 </section>
 <!-- Latest End -->
-
 
 <!-- Thai Start -->
 
@@ -121,7 +91,6 @@
 </section>
 <!-- Thai End -->
 
-
 <!-- American Start -->
 
 <section class="pb-4 pt-4">
@@ -147,7 +116,6 @@
 </section>
 <!-- American End -->
 
-
 <!-- Chinese Start -->
 <section class="pb-4 pt-4">
     <div class="d-flex mb-2 align-items-center">
@@ -171,7 +139,6 @@
     </div>
 </section>
 <!-- Chinese End -->
-
 
 <!-- Submit - Start -->
 <section class="px-4 py-5 my-5 text-center">
